@@ -1,0 +1,37 @@
+# Git files
+.git
+.gitignore
+
+# Documentation
+README.md
+LICENSE
+
+# Python cache
+__pycache__/
+*.py[codz]
+*$py.class
+.pytest_cache/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker files (don't copy themselves)
+Dockerfile
+.dockerignore
+docker-compose.yml
