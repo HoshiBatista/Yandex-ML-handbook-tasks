@@ -1,0 +1,14 @@
+services:
+  jupyter:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+      - jupyter_data:/home/jupyter/.jupyter
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    restart: unless-stopped
+
+volumes:
+  jupyter_data:
